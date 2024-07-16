@@ -11,17 +11,17 @@ namespace Sensores {
     let Reference_VOLTAGE = 3100
     let crashSensorPin: DigitalPin
     export enum DHT11_state {
-        //% block="temperature(℃)" enumval=0
+        //% block="temperatura(℃)" enumval=0
         DHT11_temperature_C,
 
-        //% block="humidity(0~100)" enumval=1
+        //% block="humidade(0~100)" enumval=1
         DHT11_humidity,
     }
     export enum RelayStateList {
-        //% block="NC|Close NO|Open"
+        //% block="Fechado"
         On,
 
-        //% block="NC|Open NO|Close"
+        //% block="Aberto"
         Off
     }
     export enum Distance_Unit_List {
@@ -34,8 +34,8 @@ namespace Sensores {
     /**
     * TODO: Configuração do sensor de colisão
     */
-    //% blockId=octopus_crashsetup  blockGap=10
-    //% block="Setup crash sensor at pin %crashpin"
+    //% blockId=Sensor de Colisão  blockGap=10
+    //% block="Configurando Sensor de Colisão no pino %crashpin"
     export function crashSensorSetup(crashpin: DigitalPin): void {
         crashSensorPin = crashpin;
         pins.setPull(crashpin, PinPullMode.PullUp)
