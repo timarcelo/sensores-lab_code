@@ -45,7 +45,7 @@ namespace Sensores {
     * TODO: Verifica se o sensor de colisão está pressionado no momento.
     */
     //% blockId=Coloisão  blockGap=30
-    //% block="sensor de colisão pressionado"
+    //% block="Sensor de colisão pressionado"
     export function crashSensor(): boolean {
         let a: number = pins.digitalReadPin(crashSensorPin);
         if (a == 0) {
@@ -424,7 +424,7 @@ namespace Sensores {
 
     let _dht11_temp = -999.0
     let _dht11_humi = -999.0
-    //% blockId="readdht11" block="DHT11 sensor %Rjpin %dht11state value"
+    //% blockId="Leitura do sensor dht11" block="DHT11 sensor %Rjpin %dht11state valor"
     //% Rjpin.fieldEditor="gridpicker" dht11state.fieldEditor="gridpicker"
     //% Rjpin.fieldOptions.columns=2 dht11state.fieldOptions.columns=1
     export function dht11Sensor(pin: DigitalPin, dht11state: DHT11_state): number {
