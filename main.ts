@@ -7,7 +7,7 @@ enum TMP36Type {
 }
 
 //% weight=10 color=#0fbc11 icon="\uf015"
-namespace smarthome {
+namespace Sensores {
     let Reference_VOLTAGE = 3100
     let crashSensorPin: DigitalPin
     export enum DHT11_state {
